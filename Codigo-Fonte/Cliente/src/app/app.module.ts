@@ -10,10 +10,6 @@ import { HttpInterceptorModule } from './service/header-interceptor';
 import { GuardiaoGuard } from './service/guardiao.guard';
 import { HomeDoadorComponent } from './home-doador/home-doador.component';
 import { HomeAdminComponent } from './home-admin/home-admin.component';
-import {RadioButtonModule} from 'primeng/radiobutton';
-import {MenubarModule} from 'primeng/menubar';
-import {MenuItem} from 'primeng/api';
-import {FieldsetModule} from 'primeng/fieldset';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export const appRouters: Routes = [
@@ -40,9 +36,6 @@ export const routes: ModuleWithProviders = RouterModule.forRoot(appRouters);
     HttpClientModule,
     routes,
     HttpInterceptorModule,
-    RadioButtonModule,
-    MenubarModule,
-    FieldsetModule,
     BrowserAnimationsModule,
   ],
   providers: [],

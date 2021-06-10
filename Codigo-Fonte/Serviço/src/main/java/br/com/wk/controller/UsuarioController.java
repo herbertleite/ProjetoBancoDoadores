@@ -43,5 +43,6 @@ public class UsuarioController {
 		implementacaoUserDetailsSercice.insereAcessoPadraoUsuario(usuarioSalvo.getId());
 		return new ResponseEntity<Usuario>(usuarioSalvo, HttpStatus.OK);
 	}
+	
 
 }

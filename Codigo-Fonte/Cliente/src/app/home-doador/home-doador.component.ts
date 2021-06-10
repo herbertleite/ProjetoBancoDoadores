@@ -10,7 +10,6 @@ import { Location } from '@angular/common';
 export class HomeDoadorComponent implements OnInit {
 
   constructor(private router: Router) {
-
   }
 
   ngOnInit() {

@@ -4,7 +4,9 @@ export class AppConstants {
 
 	public static get baseLogin(): string { return this.baseServidor + "wk/login" }
 
-	public static get baseUrl(): string {return this.baseServidor + "wk/usuario/"}
+	public static get baseUrlUsuario(): string {return this.baseServidor + "wk/usuario/"}
 
- 
+  public static get baseUrlCandidato(): string {return this.baseServidor + "wk/candidato/"}
+
+
 }

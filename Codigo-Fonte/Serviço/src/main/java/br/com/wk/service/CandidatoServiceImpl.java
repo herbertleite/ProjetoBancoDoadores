@@ -17,6 +17,7 @@ import br.com.wk.repository.CandidatoRepository;
 @Service
 public class CandidatoServiceImpl implements CandidatoService{
 
+	@Autowired
 	CandidatoRepository candidatoRepository;
 	
 	@Override

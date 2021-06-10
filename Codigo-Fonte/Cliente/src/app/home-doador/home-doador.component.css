@@ -5,9 +5,23 @@
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid #696969;
+    font-weight: bolder;
+    color: black;
 }
 
 tr:nth-child(2n+2) {
     background: #ccc;
+}
+
+td,
+th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+h3 {
+    font-weight: 100;
+    font-family: cursive;
+    color: #FF4500
 }

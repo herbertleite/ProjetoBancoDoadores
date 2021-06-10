@@ -12,75 +12,75 @@
                     <input type="text" id="name" name="name" class="form-control" placeholder="Nome" [(ngModel)]="candidato.nome">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Cpf">
+                    <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Cpf" [(ngModel)]="candidato.cpf">
                 </div>
 
                 <div class="col-md-3">
-                    <input type="text" id="rg" name="rg" class="form-control" placeholder="Rg">
+                    <input type="text" id="rg" name="rg" class="form-control" placeholder="Rg" [(ngModel)]="candidato.rg">
                 </div>
 
                 <div class="col-md-3">
-                    <input type="text" id="datanascimento" name="datanascimento" class="form-control" placeholder="Data de nascimento">
+                    <input type="text" id="datanascimento" name="datanascimento" class="form-control" placeholder="Data de nascimento" [(ngModel)]="candidato.data_nasc">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-3">
-                    <input type="text" id="sexo" name="sexo" class="form-control" placeholder="Sexo">
+                    <input type="text" id="sexo" name="sexo" class="form-control" placeholder="Sexo" [(ngModel)]="candidato.sexo">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" id="mae" name="mae" class="form-control" placeholder="Nome da mãe">
-                </div>
-
-                <div class="col-md-3">
-                    <input type="text" id="pai" name="pai" class="form-control" placeholder="Nome do pai">
+                    <input type="text" id="mae" name="mae" class="form-control" placeholder="Nome da mãe" [(ngModel)]="candidato.mae">
                 </div>
 
                 <div class="col-md-3">
-                    <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                    <input type="text" id="pai" name="pai" class="form-control" placeholder="Nome do pai" [(ngModel)]="candidato.pai">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" id="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="candidato.email">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-3">
-                    <input type="text" id="cep" name="cep" class="form-control" placeholder="Cep">
+                    <input type="text" id="cep" name="cep" class="form-control" placeholder="Cep" [(ngModel)]="candidato.cep">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço">
-                </div>
-
-                <div class="col-md-3">
-                    <input type="text" id="numero" name="numero" class="form-control" placeholder="Número">
+                    <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço" [(ngModel)]="candidato.endereco">
                 </div>
 
                 <div class="col-md-3">
-                    <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Bairro">
+                    <input type="text" id="numero" name="numero" class="form-control" placeholder="Número" [(ngModel)]="candidato.numero">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Bairro" [(ngModel)]="candidato.bairro">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-3">
-                    <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade">
+                    <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Cidade" [(ngModel)]="candidato.cidade">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" id="estado" name="estado" class="form-control" placeholder="Estado">
-                </div>
-
-                <div class="col-md-3">
-                    <input type="text" id="telfixo" name="telfixo" class="form-control" placeholder="Telefone Fixo">
+                    <input type="text" id="estado" name="estado" class="form-control" placeholder="Estado" [(ngModel)]="candidato.estado">
                 </div>
 
                 <div class="col-md-3">
-                    <input type="text" id="celular" name="celular" class="form-control" placeholder="Celular">
+                    <input type="text" id="telfixo" name="telfixo" class="form-control" placeholder="Telefone Fixo" [(ngModel)]="candidato.telefone_fixo">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" id="celular" name="celular" class="form-control" placeholder="Celular" [(ngModel)]="candidato.celular">
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-md-3">
-                    <input type="text" id="altura" name="altura" class="form-control" placeholder="Altura">
+                    <input type="text" id="altura" name="altura" class="form-control" placeholder="Altura" [(ngModel)]="candidato.altura">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" id="peso" name="peso" class="form-control" placeholder="Peso">
+                    <input type="text" id="peso" name="peso" class="form-control" placeholder="Peso" [(ngModel)]="candidato.peso">
                 </div>
 
                 <div class="col-md-3">
-                    <input type="text" id="tiposanguineo" name="tiposanguineo" class="form-control" placeholder="Tipo sanguíneo">
+                    <input type="text" id="tiposanguineo" name="tiposanguineo" class="form-control" placeholder="Tipo sanguíneo" [(ngModel)]="candidato.tipo_sanguineo">
                 </div>
 
             </div>
@@ -88,7 +88,7 @@
             <div class="form-group" align="center">
                 <input type="submit" value="Adicionar Doador na lista" class="btn btn-primary" (click)="add()">
                 <input type="submit" value="Processar Lista de doadores" class="btn btn-primary" (click)="processar()">
-
+                <input type="submit" value="Consultar Estatísticas" class="btn btn-primary" (click)="consultar()">
             </div>
 
 

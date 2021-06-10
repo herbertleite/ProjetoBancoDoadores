@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { Candidato } from '../model/Candidato';
+import {CandidatoService} from '../service/candidato.service'
 
 @Component({
   selector: 'app-home-admin',
@@ -12,13 +13,18 @@ export class HomeAdminComponent implements OnInit {
 
   candidato: Candidato = new Candidato();
   tamanhoLista: number = 0;
-  list: Array<Candidato>;
+  listCandidatos: Array<Candidato> = new Array<Candidato>();
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private candidatoService: CandidatoService,
+    ) {
+
   }
 
   ngOnInit() {
     this.candidato =  new Candidato();
+    this.listCandidatos = new Array<Candidato>();
   }
 
   public sair() {
@@ -27,13 +33,22 @@ export class HomeAdminComponent implements OnInit {
   }
 
   add(){
+    this.listCandidatos.push(this.candidato)
     this.candidato =  new Candidato();
     this.tamanhoLista ++;
+    console.info(this.listCandidatos);
   }
 
   processar(){
+    this.candidatoService.salvarCandidatos(this.listCandidatos);
+    this.listCandidatos = new Array<Candidato>();
+    console.info(this.listCandidatos);
     this.candidato =  new Candidato();
     this.tamanhoLista = 0;
+    alert("Sucesso na operação");
+  }
+
+  consultar(){
     this.router.navigateByUrl('/home-doador');
   }
 

@@ -13,11 +13,11 @@ export class UsuarioService {
   }
 
   salvarUsuarioDoador(user): Observable<any> {
-    return this.http.post<any>(AppConstants.baseUrl + "doador", user);
+    return this.http.post<any>(AppConstants.baseUrlUsuario + "doador", user);
   }
 
   salvarUsuarioAdmin(user): Observable<any> {
-    return this.http.post<any>(AppConstants.baseUrl + "admin", user);
+    return this.http.post<any>(AppConstants.baseUrlUsuario + "admin", user);
   }
 
   userAutenticado() {

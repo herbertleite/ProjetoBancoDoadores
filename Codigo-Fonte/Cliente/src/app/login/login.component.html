@@ -1,0 +1,230 @@
+<div class="gtco-loader">
+</div>
+
+<div id="page">
+
+
+    <div class="page-inner">
+        <nav class="gtco-nav" role="navigation">
+            <div class="gtco-container">
+
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div id="gtco-logo"><a href="index.html">Doar <em>.</em></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(../assets/splash/images/sangue.jpg)">
+            <div class="overlay"></div>
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-0 text-left">
+
+
+                        <div class="row row-mt-15em">
+                            <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+                                <span class="intro-text-small">Bem vindo em wksanguine</span>
+                                <h1>Agencia de doação de sangue.</h1>
+                            </div>
+                            <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                                <div class="form-wrap">
+                                    <div class="tab">
+                                        <ul class="tab-menu">
+                                            <li class="active gtco-first"><a href="#" data-tab="signup">Cadastrar</a></li>
+                                            <li class="gtco-second"><a href="#" data-tab="login">Acessar</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-content-inner active" data-content="signup">
+                                                <form action="#">
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <label for="username">Login ou Email</label>
+                                                            <input type="text" class="form-control" id="username" [(ngModel)]="user.login" name="login">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <label for="password">Senha</label>
+                                                            <input type="password" class="form-control" id="password" [(ngModel)]="user.senha" name="senha">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <label for="password2">Repita Senha</label>
+                                                            <input type="password" class="form-control" id="password2" [(ngModel)]="senha2" name="senha">
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p> <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click)="radio1clicado()"><label> Sou doador  </label></p>
+                                                        <p><input type="radio" name="flexRadioDefault" id="flexRadioDefault2" (click)="radio2clicado()"><label> Sou Administrador</label></p>
+
+                                                    </div>
+                                                    <div class="row form-group">
+
+                                                        <div class="col-md-12">
+                                                            <input type="submit" class="btn btn-primary" value="Cadastrar" (click)="cadastrar()">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="tab-content-inner" data-content="login">
+                                                <form>
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <label for="login">Login ou Email</label>
+                                                            <input type="email" class="form-control" [(ngModel)]="user.login" id="login" name="login" [ngModelOptions]="{standalone: true}">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <label for="password">Senha</label>
+                                                            <input type="password" class="form-control" [(ngModel)]="user.senha" id="senha" [ngModelOptions]="{standalone: true}" name="senha">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <input type="submit" class="btn btn-primary" (click)="logar()" value="Acessar">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="gtco-section border-bottom">
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                        <h2>Pessos Doadoras
+                        </h2>
+                        <p>Eles relataram sua experiencia como doadores pela primeira vez.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <a href="../assets/splash/images/h1.jpg" class="fh5co-project-item image-popup">
+                            <figure>
+                                <div class="overlay"><i class="ti-plus"></i></div>
+                                <img src=" ../assets/splash/images/h1.jpg " alt="Image " class="img-responsive " width="100%">
+                            </figure>
+                            <div class="fh5co-text ">
+                                <h2>Vitor</h2>
+                                <p>Nem doeu..</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 ">
+                        <a href=" ../assets/splash/images/h2.jpg " class="fh5co-project-item image-popup ">
+                            <figure>
+                                <div class="overlay "><i class="ti-plus "></i></div>
+                                <img src=" ../assets/splash/images/h2.jpg " alt="Image " class="img-responsive " width="100%">
+                            </figure>
+                            <div class="fh5co-text ">
+                                <h2>Anamelia</h2>
+                                <p>É uma experiencia incrivel, quero doar sempre..</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 ">
+                        <a href=" ../assets/splash/images/h3.jpg " class="fh5co-project-item image-popup ">
+                            <figure>
+                                <div class="overlay "><i class="ti-plus "></i></div>
+                                <img src=" ../assets/splash/images/h3.jpg " alt="Image " class="img-responsive " width="100%">
+                            </figure>
+                            <div class="fh5co-text ">
+                                <h2>Alex</h2>
+                                <p>Salvei vidas..</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="gtco-counter " class="gtco-section ">
+            <div class="gtco-container ">
+
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box ">
+                        <h2>Porque doar?</h2>
+                        <p>A doação de sangue é um ato voluntário que pode ajudar a salvar muitas vidas. Em cada doação, uma pessoa doa, no máximo, 450 ml de sangue e essa única doação pode salvar a vida de até quatro pessoas. Vale destacar que, em cerca
+                            de um dia, o organismo já repõe a quantidade de sangue que foi retirada na doação.</p>
+                    </div>
+                </div>
+
+                <div class="row ">
+
+                    <div class="col-md-12 col-sm-12 animate-box " data-animate-effect="fadeInLeft ">
+                        <div class="feature-center ">
+                            <span class="icon ">
+							<i class="ti-face-smile "></i>
+						</span>
+                            <span class="counter js-counter " data-from="0 " data-to="97 " data-speed="5000 " data-refresh-interval="50 "></span>
+                            <span class="counter-label ">Os necessitados agradecem</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="gtco-products ">
+            <div class="gtco-container ">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading ">
+                        <h2>Notícia</h2>
+                        <p>Programadores de java e angular desenvolveram sistemas incriveis para o ministério da economia.</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="owl-carousel owl-carousel-carousel ">
+                        <div class="item ">
+                            <a href="# "><img src="../assets/splash/images/pp.jpg " alt="Free HTML5 Bootstrap Template by FreeHTML5.co "></a>
+                        </div>
+                        <div class="item ">
+                            <a href="# "><img src="../assets/splash/images/pp2.jpg " alt="Free HTML5 Bootstrap Template by FreeHTML5.co "></a>
+                        </div>
+                        <div class="item ">
+                            <a href="# "><img src="../assets/splash/images/pp3.jpg " alt="Free HTML5 Bootstrap Template by FreeHTML5.co "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <footer id="gtco-footer " role="contentinfo ">
+            <div class="gtco-container " align="center ">
+                <p>Doe: Sangue</p>
+                <p><a href="http://www.wksanguine.sp.gov.br/doacao ">http://www.wksanguine.sp.gov.br/doacao</a></p>
+
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<div class="gototop js-top ">
+    <a href="# " class="js-gotop "><i class="icon-arrow-up "></i></a>
+</div>

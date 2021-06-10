@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-virtualscroller.umd.js",
+  "module": "../fesm5/primeng-virtualscroller.js",
+  "es2015": "../fesm2015/primeng-virtualscroller.js",
+  "esm5": "../esm5/virtualscroller/primeng-virtualscroller.js",
+  "esm2015": "../esm2015/virtualscroller/primeng-virtualscroller.js",
+  "fesm5": "../fesm5/primeng-virtualscroller.js",
+  "fesm2015": "../fesm2015/primeng-virtualscroller.js",
+  "typings": "primeng-virtualscroller.d.ts",
+  "metadata": "primeng-virtualscroller.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/virtualscroller"
+}

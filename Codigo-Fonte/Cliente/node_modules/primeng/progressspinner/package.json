@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-progressspinner.umd.js",
+  "module": "../fesm5/primeng-progressspinner.js",
+  "es2015": "../fesm2015/primeng-progressspinner.js",
+  "esm5": "../esm5/progressspinner/primeng-progressspinner.js",
+  "esm2015": "../esm2015/progressspinner/primeng-progressspinner.js",
+  "fesm5": "../fesm5/primeng-progressspinner.js",
+  "fesm2015": "../fesm2015/primeng-progressspinner.js",
+  "typings": "primeng-progressspinner.d.ts",
+  "metadata": "primeng-progressspinner.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/progressspinner"
+}

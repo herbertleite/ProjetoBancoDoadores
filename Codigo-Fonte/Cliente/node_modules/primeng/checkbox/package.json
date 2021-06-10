@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-checkbox.umd.js",
+  "module": "../fesm5/primeng-checkbox.js",
+  "es2015": "../fesm2015/primeng-checkbox.js",
+  "esm5": "../esm5/checkbox/primeng-checkbox.js",
+  "esm2015": "../esm2015/checkbox/primeng-checkbox.js",
+  "fesm5": "../fesm5/primeng-checkbox.js",
+  "fesm2015": "../fesm2015/primeng-checkbox.js",
+  "typings": "primeng-checkbox.d.ts",
+  "metadata": "primeng-checkbox.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/checkbox"
+}

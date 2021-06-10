@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-sidebar.umd.js",
+  "module": "../fesm5/primeng-sidebar.js",
+  "es2015": "../fesm2015/primeng-sidebar.js",
+  "esm5": "../esm5/sidebar/primeng-sidebar.js",
+  "esm2015": "../esm2015/sidebar/primeng-sidebar.js",
+  "fesm5": "../fesm5/primeng-sidebar.js",
+  "fesm2015": "../fesm2015/primeng-sidebar.js",
+  "typings": "primeng-sidebar.d.ts",
+  "metadata": "primeng-sidebar.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/sidebar"
+}

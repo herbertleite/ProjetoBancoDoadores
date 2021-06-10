@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-picklist.umd.js",
+  "module": "../fesm5/primeng-picklist.js",
+  "es2015": "../fesm2015/primeng-picklist.js",
+  "esm5": "../esm5/picklist/primeng-picklist.js",
+  "esm2015": "../esm2015/picklist/primeng-picklist.js",
+  "fesm5": "../fesm5/primeng-picklist.js",
+  "fesm2015": "../fesm2015/primeng-picklist.js",
+  "typings": "primeng-picklist.d.ts",
+  "metadata": "primeng-picklist.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/picklist"
+}

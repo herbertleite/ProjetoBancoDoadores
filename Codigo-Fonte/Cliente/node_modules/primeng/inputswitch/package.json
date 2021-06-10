@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-inputswitch.umd.js",
+  "module": "../fesm5/primeng-inputswitch.js",
+  "es2015": "../fesm2015/primeng-inputswitch.js",
+  "esm5": "../esm5/inputswitch/primeng-inputswitch.js",
+  "esm2015": "../esm2015/inputswitch/primeng-inputswitch.js",
+  "fesm5": "../fesm5/primeng-inputswitch.js",
+  "fesm2015": "../fesm2015/primeng-inputswitch.js",
+  "typings": "primeng-inputswitch.d.ts",
+  "metadata": "primeng-inputswitch.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/inputswitch"
+}

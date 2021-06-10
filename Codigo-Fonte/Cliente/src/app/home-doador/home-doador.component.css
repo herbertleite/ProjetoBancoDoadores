@@ -1,0 +1,13 @@
+.card {
+    padding: 5%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+tr:nth-child(2n+2) {
+    background: #ccc;
+}

@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-spinner.umd.js",
+  "module": "../fesm5/primeng-spinner.js",
+  "es2015": "../fesm2015/primeng-spinner.js",
+  "esm5": "../esm5/spinner/primeng-spinner.js",
+  "esm2015": "../esm2015/spinner/primeng-spinner.js",
+  "fesm5": "../fesm5/primeng-spinner.js",
+  "fesm2015": "../fesm2015/primeng-spinner.js",
+  "typings": "primeng-spinner.d.ts",
+  "metadata": "primeng-spinner.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/spinner"
+}

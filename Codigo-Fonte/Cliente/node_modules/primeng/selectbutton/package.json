@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/primeng-selectbutton.umd.js",
+  "module": "../fesm5/primeng-selectbutton.js",
+  "es2015": "../fesm2015/primeng-selectbutton.js",
+  "esm5": "../esm5/selectbutton/primeng-selectbutton.js",
+  "esm2015": "../esm2015/selectbutton/primeng-selectbutton.js",
+  "fesm5": "../fesm5/primeng-selectbutton.js",
+  "fesm2015": "../fesm2015/primeng-selectbutton.js",
+  "typings": "primeng-selectbutton.d.ts",
+  "metadata": "primeng-selectbutton.metadata.json",
+  "sideEffects": false,
+  "name": "primeng/selectbutton"
+}

@@ -1,0 +1,94 @@
+#!/usr/bin/env node
+
+/* eslint-env node, commonjs */
+'use strict';
+
+// Provide a title to the process in `ps`
+process.title = 'angular-cli';
+
+const ngIDE = require('commander');
+const path = require('path');
+const semver = require('semver');
+const chalk = require('chalk');
+
+const Messages = require('../lib/messages');
+
+const pkg = require('../package.json');
+const nodeVersion = process.version;
+
+   
+if (!semver.satisfies(nodeVersion, pkg.engines.node)) {
+  console.log(chalk.red(Messages.NODE_VERSION_REQUIRED_ERROR, pkg.engines.node));
+  process.exit(1);
+}
+
+
+ngIDE
+  .command('install [path]')
+  .description(Messages.INSTALL_COMMAND_DESCRIPTION)
+  .action((installPath) => {
+    const resolvedPath = path.resolve(installPath); 
+    if (resolvedPath) {
+      console.log(Messages.INSTALLING_ANGULAR, resolvedPath);
+      const installCommand = require('../lib/install');
+      installCommand(resolvedPath);
+    } else {
+      console.log(Messages.INSTALL_REQUIRES_PATH);
+    }
+  });
+
+ngIDE
+  .command('open [path]')
+  .description(Messages.OPEN_COMMAND_DESCRIPTION)
+  .action((pathToOpen) => {
+    const openFileInIDE = require('../lib/openFileInIDE');
+    const getInstallations = require('../lib/utils').getInstallations;
+
+    if (pathToOpen) {
+      getInstallations().take(1)
+        .subscribe((installations) => {
+          if (installations.length) {
+            openFileInIDE(path.resolve(pathToOpen));
+          } else {
+            process.exit();
+          }    
+        },
+        e => {
+          console.log(Messages.NO_INSTALLIONS_DETECTED);
+        }
+        );
+    } else {
+      console.log(Messages.OPEN_REQUIRES_PATH);
+    }
+  });
+
+ngIDE
+  .command('update-angular-cli')
+  .option('-D, --dry-run', 'Display summary of the changes that will be applied')
+  .option('-L, --log-file [path]', 'Path where the logs will be written to')
+  .option('-R, --update-reference-file [path]', 'Path where the update reference file will get created')
+  .description(Messages.UPDATE_COMMAND_DESCRIPTION)
+  .action((options) => {
+    const updateCommand = require('../lib/update');
+    updateCommand(options);
+  });
+
+ngIDE
+  .version(pkg.version)
+  .parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+  const getInstallations = require('../lib/utils').getInstallations;
+
+  getInstallations().take(1)
+    .subscribe((installations) => {
+      const openProjectInIDE = require('../lib/openProjectInIDE');
+      
+      if (installations.length) {
+        openProjectInIDE(process.cwd());
+      } else {
+        console.log(Messages.NO_INSTALLATIONS_DETECTED);
+        process.exit();
+      }    
+    });
+}

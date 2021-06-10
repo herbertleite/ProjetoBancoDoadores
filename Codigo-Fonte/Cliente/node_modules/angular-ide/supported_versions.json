@@ -1,0 +1,9 @@
+{
+  "updated_at": 1496750077,
+  "supported_versions": [
+    {
+      "angular-ide": ">=0.9.25",
+      "angular-cli": ">=1.0.0-beta.16"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+The Angular IDE by Webclipse is a IDE built specifically for Angular 2 with TypeScript 2.0 validation, advanced HTML coding, integrated usage of the angular-cli and all built optimized for developers to make the most of Angular.
+
+Are you ready to be a hero?  Well, just use Angular!  Want to make it easier to be a hero, grab Angular IDE.
+
+https://www.genuitec.com/products/angular-ide/
+
+The angular-ide module provides automatic ways of installing and interacting with the IDE.  For instance, if you want to get started:
+
+> ngide install /path/to/ide
+
+> ngide open src/app/main.ts
+
+Would first install the IDE to your chosen path, and then you can open any file directly in the IDE to edit it.
+
+Better yet, it can even integrate with ng serve so that as you are working with your command line tools, the Angular IDE stays up to date even reporting errors.

@@ -20,4 +20,12 @@ public interface CandidatoService {
 
 	
 	public int salvarCandidatos(List<Candidato> candidatos);
+	
+	public List<Double> indiceImc();
+	
+	public List<Double> porcentagemObesos();
+	
+	public List<Double> mediaIdadeCandidatosTipoSangue();
+	
+	public List<Long> qtdDoadores();
 }

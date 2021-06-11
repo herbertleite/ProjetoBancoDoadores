@@ -26,7 +26,8 @@ public class CandidatoController {
 	
 	@PostMapping(value = "/salvaCandidatos", produces = "application/json")
 	public ResponseEntity<Integer> salvarCandidatos(@Valid @RequestBody List<Candidato> candidatos) {
-		System.out.println("Chegou");
 		return new ResponseEntity<Integer>(candidatoService.salvarCandidatos(candidatos), HttpStatus.OK); 
 	}
+	
+
 }

@@ -16,15 +16,14 @@ export class HomeAdminComponent implements OnInit {
   listCandidatos: Array<Candidato> = new Array<Candidato>();
 
   constructor(
-    private router: Router,
-    private candidatoService: CandidatoService,
+    private router: Router, private candidatoService: CandidatoService
     ) {
 
   }
 
   ngOnInit() {
-    this.candidato =  new Candidato();
-    this.listCandidatos = new Array<Candidato>();
+
+
   }
 
   public sair() {
@@ -40,7 +39,9 @@ export class HomeAdminComponent implements OnInit {
   }
 
   processar(){
-    this.candidatoService.salvarCandidatos(this.listCandidatos);
+    this.candidatoService.salva(this.listCandidatos).subscribe(data => {
+      let i = data;
+    });
     this.listCandidatos = new Array<Candidato>();
     console.info(this.listCandidatos);
     this.candidato =  new Candidato();

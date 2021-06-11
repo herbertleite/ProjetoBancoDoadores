@@ -1,23 +1,29 @@
 package br.com.wk.dto;
 
-public class UsuariosEstadoDTO {
+import java.io.Serializable;
+
+public class UsuariosEstadoDTO implements Serializable{
 
 
-	    private Integer quantidadeCandidatos;
+	    private Long quantidadeCandidatos;
 	    private String estado;
-		
-	    public UsuariosEstadoDTO(Integer quantidadeCandidatos, String estado) {
+	    
+	    public UsuariosEstadoDTO(Long quantidadeCandidatos, String estado) {
+			super();
 			this.quantidadeCandidatos = quantidadeCandidatos;
 			this.estado = estado;
 		}
+	    
 
-		public Integer getQuantidadeCandidatos() {
+		public Long getQuantidadeCandidatos() {
 			return quantidadeCandidatos;
 		}
 
-		public void setQuantidadeCandidatos(Integer quantidadeCandidatos) {
+		public void setQuantidadeCandidatos(Long quantidadeCandidatos) {
 			this.quantidadeCandidatos = quantidadeCandidatos;
 		}
+
+		
 
 		public String getEstado() {
 			return estado;

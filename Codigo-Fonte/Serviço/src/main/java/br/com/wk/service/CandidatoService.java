@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-
+import br.com.wk.dto.UsuariosEstadoDTO;
 import br.com.wk.model.Candidato;
 import br.com.wk.repository.CandidatoRepository;
 
@@ -20,4 +20,17 @@ public interface CandidatoService {
 
 	
 	public int salvarCandidatos(List<Candidato> candidatos);
+	
+	public List<Double> indiceImc();
+	
+	public List<Double> porcentagemObesos();
+	
+	public List<Double> mediaIdadeCandidatosTipoSangue();
+	
+	public List<Long> qtdDoadores();
+
+	public List<Candidato> todos();
+
+	public List<UsuariosEstadoDTO> porEstado();
+
 }

@@ -4,10 +4,13 @@
 
 table,
 th,
-td {
+td,
+tr {
     border: 1px solid #696969;
     font-weight: bolder;
     color: black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 tr:nth-child(2n+2) {
@@ -15,7 +18,8 @@ tr:nth-child(2n+2) {
 }
 
 td,
-th {
+th,
+tr {
     text-align: center;
     vertical-align: middle;
 }
@@ -24,4 +28,20 @@ h3 {
     font-weight: 100;
     font-family: cursive;
     color: #FF4500
+}
+
+.verde {
+    background-color: green;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.roxo {
+    background-color: purple;
 }

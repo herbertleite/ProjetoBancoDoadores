@@ -26,7 +26,7 @@ public class CandidatoController {
 	private CandidatoService candidatoService;
 
 	@PostMapping(value = "/salva-candidatos", produces = "application/json")
-	public ResponseEntity<Integer>todosCandidatos(@Valid @RequestBody List<Candidato> l) {
+	public ResponseEntity<Integer>salvarCandidatos(@Valid @RequestBody List<Candidato> l) {
 		return new ResponseEntity<Integer>(candidatoService.salvarCandidatos(l), HttpStatus.OK); 
 	}
 	
@@ -56,9 +56,5 @@ public class CandidatoController {
 		return new ResponseEntity<List<Long>>(candidatoService.qtdDoadores(), HttpStatus.OK); 
 	}
 	
-	@PostMapping(value = "/salvaCandidatos", produces = "application/json")
-	public ResponseEntity<Integer> salvarCandidatos(@Valid @RequestBody List<Candidato> candidatos) {
-		return new ResponseEntity<Integer>(candidatoService.salvarCandidatos(candidatos), HttpStatus.OK); 
-	}
 
 }

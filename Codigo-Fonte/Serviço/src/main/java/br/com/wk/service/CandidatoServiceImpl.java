@@ -1,7 +1,10 @@
 package br.com.wk.service;
 
+<<<<<<< HEAD
 import java.math.BigInteger;
 import java.util.ArrayList;
+=======
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,7 +31,11 @@ public class CandidatoServiceImpl implements CandidatoService{
 	
 	@Override
 	public List<Double> indiceImc() {
+<<<<<<< HEAD
 			List<Double> indices = new ArrayList();
+=======
+			List<Double> indices = null;
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 			indices.add(candidatoRepository.calculaImc(0, 10));
 			indices.add(candidatoRepository.calculaImc(11, 20));
 			indices.add(candidatoRepository.calculaImc(21, 30));
@@ -39,6 +46,7 @@ public class CandidatoServiceImpl implements CandidatoService{
 		return indices; 
 	}
 	
+<<<<<<< HEAD
 	@Override 
 	public List<Double> porcentagemObesos(){
 			List<BigInteger> candidatos = candidatoRepository.contaCandidatosSexo();
@@ -47,13 +55,27 @@ public class CandidatoServiceImpl implements CandidatoService{
 			Double porcentagem = (candidatosObesos.get(0).doubleValue()/candidatos.get(0).doubleValue())*100;
 			porcentagemCandidatosObesos.add(porcentagem);
 			porcentagem = (candidatosObesos.get(1).doubleValue()/candidatos.get(1).doubleValue())*100;
+=======
+	@Override
+	public List<Double> porcentagemObesos(){
+			List<Long> candidatos = candidatoRepository.contaCandidatosSexo();
+			List<Long> candidatosObesos = candidatoRepository.contaCandidatosSexoImc();
+			List<Double> porcentagemCandidatosObesos = null;
+			double porcentagem = candidatosObesos.get(0)/candidatos.get(0)*100;
+			porcentagemCandidatosObesos.add(porcentagem);
+			porcentagem = candidatosObesos.get(1)/candidatos.get(1)*100;
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 			porcentagemCandidatosObesos.add(porcentagem);
 		return porcentagemCandidatosObesos;
 	}
 	
 	@Override
 	public List<Double> mediaIdadeCandidatosTipoSangue(){
+<<<<<<< HEAD
 		return candidatoRepository.mediaIdadeCandidatosTipoSangue();
+=======
+		return mediaIdadeCandidatosTipoSangue();
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 	}
 	
 	@Override
@@ -66,7 +88,11 @@ public class CandidatoServiceImpl implements CandidatoService{
 		List<String> doadorABNegativo =  Arrays.asList("A-","B-","O-","AB-");
 		List<String> doadorOPositivo =  Arrays.asList("O+","O-");
 		List<String> doadorONegativo =  Arrays.asList("O-");
+<<<<<<< HEAD
 		List<Long> qtdDoadores = new ArrayList<>();
+=======
+		List<Long> qtdDoadores = null;
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 		qtdDoadores.add(candidatoRepository.doadoresPorTipoSangue(doadorAPositivo));
 		qtdDoadores.add(candidatoRepository.doadoresPorTipoSangue(doadorANegativo));
 		qtdDoadores.add(candidatoRepository.doadoresPorTipoSangue(doadorBPositivo));
@@ -77,6 +103,7 @@ public class CandidatoServiceImpl implements CandidatoService{
 		qtdDoadores.add(candidatoRepository.doadoresPorTipoSangue(doadorONegativo));
 		return qtdDoadores;
 	}
+<<<<<<< HEAD
 
 
 	@Override
@@ -93,4 +120,6 @@ public class CandidatoServiceImpl implements CandidatoService{
  
 
 	
+=======
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 }

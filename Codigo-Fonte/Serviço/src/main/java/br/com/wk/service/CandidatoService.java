@@ -28,9 +28,12 @@ public interface CandidatoService {
 	public List<Double> mediaIdadeCandidatosTipoSangue();
 	
 	public List<Long> qtdDoadores();
+<<<<<<< HEAD
 
 	public List<Candidato> todos();
 
 	public List<UsuariosEstadoDTO> porEstado();
 
+=======
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 }

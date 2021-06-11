@@ -50,11 +50,19 @@ public class CandidatoController {
 		return new ResponseEntity<List<Double>>(candidatoService.mediaIdadeCandidatosTipoSangue(), HttpStatus.OK); 
 	}
 	
+<<<<<<< HEAD
 	@GetMapping(value = "/quantidade-doadores", produces = "application/json")
 	public ResponseEntity<List<Long>>qtdDoadores() {
 		return new ResponseEntity<List<Long>>(candidatoService.qtdDoadores(), HttpStatus.OK); 
 	}
 	
 	
+=======
+	@PostMapping(value = "/salvaCandidatos", produces = "application/json")
+	public ResponseEntity<Integer> salvarCandidatos(@Valid @RequestBody List<Candidato> candidatos) {
+		return new ResponseEntity<Integer>(candidatoService.salvarCandidatos(candidatos), HttpStatus.OK); 
+	}
+	
+>>>>>>> ec7a4a27165358e08882de343a1025895d97d262
 
 }
